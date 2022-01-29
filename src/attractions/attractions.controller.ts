@@ -19,7 +19,7 @@ export class AttractionsController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.attractionsService.findOne(+id);
+    return this.attractionsService.findOne(id);
   }
 
   @Patch(':id')
@@ -29,6 +29,6 @@ export class AttractionsController {
 
   @Delete(':id')
   remove(@Param('id') id: string) {
-    return this.attractionsService.remove(+id);
+    return this.attractionsService.remove(id);
   }
 }
